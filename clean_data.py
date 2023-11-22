@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data
-df = pd.read_csv('./NSQIP PUF 2017 SHORT CSV.csv')
+df = pd.read_csv('./NSQIP.csv')
 
 # Mappings for initial encoding
 age_mapping = {
