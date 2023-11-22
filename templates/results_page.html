@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Calculator Results</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Risk Calculator Results</h1>
+        <div class="row">
+            {% for outcome, score in risk_scores.items() %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        {{ outcome_display_names.get(outcome, outcome) }}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ "%.2f"|format(score * 100) }}%</h5>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
