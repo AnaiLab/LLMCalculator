@@ -6,7 +6,7 @@ Sample code for a surgical risk calculator similar to the NSQIP tool. All code g
 
 [Data Preprocessing](https://chat.openai.com/share/63501c07-fa46-4715-8de8-6ef000765761)
 
-[Modeling and metrics](https://chat.openai.com/share/c3bf6b05-fcc9-423c-93ea-3ada885f65a4)
+[Modeling and metrics](https://chat.openai.com/share/c74d474f-efb4-4365-a2e0-3d997eb8017d)
 
 [Web App](https://chat.openai.com/share/7cec49b2-a36c-4793-ad94-c6cb0744becb)
 
