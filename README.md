@@ -14,13 +14,13 @@ Sample code for a surgical risk calculator similar to the NSQIP tool. All code g
 
 **To use:**
 
-Add the file path to your NSQIP dataset in `clean_data.py`
+Add the file path to your NSQIP dataset in `preprocess.py`
 
-`filepath = './NSQIP.csv'`
+`df = pd.read_csv('./aggregated_nsqip.csv')`
 
 Next, run the following commands to create the models and start the calculator.
 1. `pip3 install -r requirements.txt`
-2. `python3 clean_data.py`
+2. `python3 preprocess.py`
 3. `python3 models.py`
-4. `python3 index.py`
+4. `python3 app.py`
 
