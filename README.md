@@ -4,11 +4,11 @@ Sample code for a surgical risk calculator similar to the NSQIP tool. All code g
 
 **To view the conversations that generated this code, visit the following links:**
 
-[Data Preprocessing](https://chat.openai.com/share/63501c07-fa46-4715-8de8-6ef000765761)
+[Data Preprocessing](https://chatgpt.com/share/041cc1d0-7dfc-44dc-9bb7-a02a9ab2d839)
 
-[Modeling and metrics](https://chat.openai.com/share/c74d474f-efb4-4365-a2e0-3d997eb8017d)
+[Modeling and metrics](https://chatgpt.com/share/dd40e1a3-4393-49dd-8786-2d90dbee1088)
 
-[Web App](https://chat.openai.com/share/7cec49b2-a36c-4793-ad94-c6cb0744becb)
+[Web App](https://chatgpt.com/share/9e50e3a5-a3f2-4f64-90ed-e9a789c83890)
 
 
 
