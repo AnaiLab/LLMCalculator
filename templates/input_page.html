@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Calculator - Input</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Risk Calculator Input</h1>
+        <form action="/results" method="post">
+            <div class="form-group">
+                <label for="age">Age</label>
+                <select class="form-control" id="age" name="Age">
+                    {% for i in range(18, 113) %}
+                    <option value="{{ i }}">{{ i }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex</label>
+                <select class="form-control" id="sex" name="SEX">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fnstatus2">Functional Status</label>
+                <select class="form-control" id="fnstatus2" name="FNSTATUS2">
+                    <option value="Independent">Independent</option>
+                    <option value="Partially Dependent">Partially Dependent</option>
+                    <option value="Totally Dependent">Totally Dependent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="emergency">Emergency Case</label>
+                <select class="form-control" id="emergency" name="EMERGNCY">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="asaclass">ASA Class</label>
+                <select class="form-control" id="asaclass" name="ASACLAS">
+                    <option value="Healthy patient">Healthy patient</option>
+                    <option value="Mild systemic disease">Mild systemic disease</option>
+                    <option value="Severe systemic disease">Severe systemic disease</option>
+                    <option value="Severe systemic disease/constant threat to life">Severe systemic disease/constant threat to life</option>
+                    <option value="Moribund/not expected to survive surgery">Moribund/not expected to survive surgery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="steroid">Steroid use for chronic condition</label>
+                <select class="form-control" id="steroid" name="STEROID">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ascites">Ascites within 30 days prior to surgery</label>
+                <select class="form-control" id="ascites" name="ASCITES">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="prsepis">Systemic Sepsis within 48 hours prior to surgery</label>
+                <select class="form-control" id="prsepis" name="PRSEPIS">
+                    <option value="None">None</option>
+                    <option value="SIRS">SIRS</option>
+                    <option value="Sepsis">Sepsis</option>
+                    <option value="Septic Shock">Septic Shock</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ventilat">Ventilator Dependent</label>
+                <select class="form-control" id="ventilat" name="VENTILAT">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="discancr">Disseminated Cancer</label>
+                <select class="form-control" id="discancr" name="DISCANCR">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="diabetes">Diabetes</label>
+                <select class="form-control" id="diabetes" name="DIABETES">
+                    <option value="No">No</option>
+                    <option value="Oral">Oral</option>
+                    <option value="Insulin">Insulin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hypermed">Hypertension requiring medication</label>
+                <select class="form-control" id="hypermed" name="HYPERMED">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hxchf">Congestive Heart Failure in 30 days prior to surgery</label>
+                <select class="form-control" id="hxchf" name="HXCHF">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dyspnea">Dyspnea</label>
+                <select class="form-control" id="dyspnea" name="DYSPNEA">
+                    <option value="No">No</option>
+                    <option value="At rest">At rest</option>
+                    <option value="With Moderate exertion">With Moderate exertion</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="smoke">Current Smoker within 1 Year</label>
+                <select class="form-control" id="smoke" name="SMOKE">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hxcopd">History of Severe COPD</label>
+                <select class="form-control" id="hxcopd" name="HXCOPD">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dialysis">Dialysis</label>
+                <select class="form-control" id="dialysis" name="DIALYSIS">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="renafail">Acute Renal Failure</label>
+                <select class="form-control" id="renafail" name="RENAFAIL">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="height">Height in Inches</label>
+                <input type="number" class="form-control" id="height" name="IN" min="1">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight in Pounds</label>
+                <input type="number" class="form-control" id="weight" name="LBS" min="1">
+            </div>
+            <div class="form-group">
+                <label for="cpt_code">CPT Code</label>
+                <input type="number" class="form-control" id="cpt_code" name="CPT_CODE" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
