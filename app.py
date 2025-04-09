@@ -94,7 +94,7 @@ def results():
     # Convert CPT code to integer
     cpt_code = int(data.get('CPT_CODE'))
     
-    if cpt_code in riskCodes:
+    if str(cpt_code) in riskCodes:
         cpt_risk = riskCodes[str(cpt_code)]
     else:
         # Calculate mean risk scores if CPT code is not found
